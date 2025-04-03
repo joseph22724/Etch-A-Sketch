@@ -1,0 +1,19 @@
+.container {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    
+}
