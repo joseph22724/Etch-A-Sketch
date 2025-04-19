@@ -1,13 +1,23 @@
 const gridContainer = document.querySelector(".container");
 
 
-function printGrid (){
-    for (let i = 0; i < 16; i++) {
-        const gridBlock = document.createElement("div");
-        gridBlock.classList.add("block");
-        gridContainer.appendChild(gridBlock);
-        
-    }
+function printGrid(numBlocks) {
+  const size = 100 / Math.sqrt(numBlocks) + "%";
+
+  for (let i = 0; i < numBlocks; i++) {
+    const gridBlock = document.createElement("div");
+    gridBlock.classList.add("block");
+
+    gridBlock.style.flexBasis = size;
+    gridBlock.style.height = size;
+
+    gridContainer.appendChild(gridBlock);
+  }
 
 }
-printGrid();
+
+printGrid(16);
+
+
+
+
