@@ -10,11 +10,20 @@ function printGrid(numBlocks) {
 
     gridBlock.style.flexBasis = size;
     gridBlock.style.height = size;
+    let shade = 255;
+
+    gridBlock.addEventListener("mouseover", () => {
+      shade -= 30;
+      gridBlock.style.backgroundColor = `rgb(${shade}, ${shade}, ${shade})`;
+    });
 
     gridContainer.appendChild(gridBlock);
+    
   }
 
 }
+
+
 
 printGrid(16);
 

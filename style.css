@@ -11,12 +11,13 @@
   
   .block {
     
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
     box-sizing: border-box;
     display: flex;
   }
 
   .block:hover{
-    background-color: gray;
+    
   }
   
